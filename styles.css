@@ -1,1 +1,97 @@
-7
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  font-size: 15px;
+}
+
+:root{
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  --font1:'Lexend Deca', sans-serif;
+  --font2:'Big Shoulders Display', cursive;
+}
+
+.cards{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  background: green;
+  min-height: 400px;
+  max-width: 275px;
+  padding: 40px;
+  position: relative;
+}
+
+.card h1{
+  color: hsl(0, 0%, 95%);
+  font-family: var(--font2);
+  font-size: 35px;
+  margin: 20px 0 15px 0;
+  text-transform: uppercase;
+}
+
+.card p{
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 22px;
+  font-family: var(--font1);
+  font-weight: 400;
+  margin: 20px 0 50px 0;
+}
+
+.btn{
+  position: absolute;
+  background: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  padding: 12px 30px;
+  bottom: 0;
+  margin-bottom: 32px;
+  border-radius: 20px;
+  color: var(--Bright-orange);
+  font-family: var(--font1);
+}
+
+.one{
+  background: var(--Bright-orange);
+}
+
+.two{
+  background: var(--Dark-cyan);
+}
+
+.three{
+  background: var(--Very-dark-cyan);
+}
+
+.one button{
+  color: var(--Bright-orange);
+}
+
+.two button{
+  color: var(--Dark-cyan);
+}
+
+.three button{
+  color: var(--Very-dark-cyan);
+}
+
+button:hover{
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
